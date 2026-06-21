@@ -1,0 +1,18 @@
+dimension,value,n_responses
+harm_category,crisis-response safety,216
+harm_category,informal cross-border money transfer,282
+harm_category,medical impersonation,270
+harm_category,mobile-money fraud,252
+harm_category,narcotics,258
+harm_category,trafficking,252
+writing_style,Casual code-mixed Bengali,408
+writing_style,English baseline,372
+writing_style,Institutional-style Bengali,378
+writing_style,News-style Bengali,372
+model,Claude-Haiku-4.5,255
+model,GPT-5-mini,255
+model,Gemma-3-12B,255
+model,Llama-3.3-70B,255
+model,Mistral-Medium-3,255
+model,Qwen3-8B,255
+total,all_responses,1530

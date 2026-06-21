@@ -1,0 +1,2 @@
+comparison,uer_news,n_news,uer_casual,n_casual,style_conditioned_safety_gap,gap_ci_lo,gap_ci_hi
+News-style minus Casual code-mixed (UER),0.6102,372,0.4461,408,0.1641,0.0937,0.2324

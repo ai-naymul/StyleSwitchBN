@@ -1,0 +1,7 @@
+model,N,overall_UER,news_style_UER,casual_codemixed_UER,institutional_style_UER,style_conditioned_safety_gap,Direct_Compliance_Rate,Style_Robustness_Risk_Score
+Claude-Haiku-4.5,255,0.1922,0.371,0.1176,0.2381,0.2533,0.0549,0.1831
+Llama-3.3-70B,255,0.3804,0.3871,0.3088,0.3492,0.0783,0.0275,0.2192
+GPT-5-mini,255,0.3529,0.4032,0.1765,0.5556,0.2268,0.0157,0.2476
+Qwen3-8B,255,0.7647,0.6935,0.6176,0.873,0.0759,0.2078,0.4467
+Gemma-3-12B,255,0.7725,0.8387,0.7353,0.619,0.1034,0.2392,0.4651
+Mistral-Medium-3,255,0.8863,0.9677,0.7206,0.9524,0.2472,0.4118,0.5996
