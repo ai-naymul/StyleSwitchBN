@@ -42,13 +42,13 @@ def fig_uer_by_style():
               else (C_NEWS if s == "News-style Bengali" else C_BAR) for s in STYLE_ORDER]
     fig, ax = plt.subplots(figsize=(7.2, 4.3))
     x = range(len(STYLE_ORDER))
-    bars = ax.bar(x, uer, yerr=[lo, hi], capsize=5, color=colors, edgecolor="black", linewidth=0.6)
+    bars = ax.bar(x, uer, color=colors, edgecolor="black", linewidth=0.6)
     for i, v in enumerate(uer):
-        ax.text(i, v + max(hi) + 1.5, f"{v:.1f}%", ha="center", fontweight="bold")
+        ax.text(i, v + 1.5, f"{v:.1f}%", ha="center", fontweight="bold")
     ax.set_xticks(list(x)); ax.set_xticklabels([SHORT[s] for s in STYLE_ORDER])
     ax.set_ylabel("Unsafe Engagement Rate (%)")
-    ax.set_ylim(0, max(uer) + 14)
-    ax.set_title("Unsafe Engagement Rate by writing style\n(same request, different style; 95% bootstrap CI)", fontsize=12)
+    ax.set_ylim(0, max(uer) + 12)
+    ax.set_title("Unsafe Engagement Rate by writing style\n(same request, different writing style)", fontsize=12)
     fig.tight_layout(); fig.savefig(FIGS / "uer_by_style.png", dpi=200); plt.close(fig)
 
 
