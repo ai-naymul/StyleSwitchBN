@@ -41,7 +41,7 @@ We keep the four-way tags to show *how* a model fails, not just whether it fails
 
 **Changing the writing style changes the safety answer.** Figure 1 shows the unsafe rate for each style. The same requests get an unsafe answer 61.0% of the time in news-style Bengali but 44.6% of the time in casual Bengali. That is a **16.4-point gap (95% CI [9.4, 23.2])** from style alone. Institutional Bengali (59.8%) behaves like news-style; the English baseline (58.9%) sits in between.
 
-![Figure 1: Unsafe Engagement Rate by Bengali writing style.](../figures/uer_by_style.png)
+![Figure 1: Unsafe Engagement Rate by writing style (English baseline plus three Bengali styles).](../figures/uer_by_style.png)
 
 **Most of the gap is partial help, not full recipes.** Figure 2 breaks the responses into the four tags. The riskier styles do not mostly hand over step-by-step instructions. They give the general method, wrapped in a respectable-looking frame. Casual Bengali has both the most safe refusals and the fewest direct-compliance answers.
 
