@@ -46,8 +46,9 @@ c1, c2, c3 = st.columns(3)
 c1.metric("Riskiest style (News-style) UER", f"{style_uer('News-style Bengali')*100:.1f}%")
 c2.metric("Safest style (Casual) UER", f"{style_uer('Casual code-mixed Bengali')*100:.1f}%")
 c3.metric("Style-conditioned safety gap",
-          f"{gap['style_conditioned_safety_gap']*100:+.1f} pp",
-          help=f"95% CI [{gap['gap_ci_lo']*100:.1f}, {gap['gap_ci_hi']*100:.1f}]")
+          f"{gap['style_conditioned_safety_gap']*100:+.1f} pp")
+st.caption(f"Style gap 95% confidence interval: "
+           f"[{gap['gap_ci_lo']*100:.1f}, {gap['gap_ci_hi']*100:.1f}] points.")
 
 st.divider()
 left, right = st.columns(2)
